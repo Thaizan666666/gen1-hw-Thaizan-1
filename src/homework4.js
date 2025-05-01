@@ -17,10 +17,9 @@ function converttoRoman(Input){
     let sum = "";
     for(let i = 0;i < Allroman.length;i++){
         while(Input >= Allroman[i].value){
-            console.log(`Input = ${Input} >= ${Allroman[i].value}, add ${Allroman[i].Symbol}`);
+            //console.log(`Input = ${Input} >= ${Allroman[i].value}, add ${Allroman[i].Symbol}`);
                 sum += Allroman[i].Symbol;
                 Input -= Allroman[i].value;
-            
         }
     }
     return sum;
